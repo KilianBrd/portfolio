@@ -1,0 +1,43 @@
+.navbar {
+  padding: 30px 20px;
+  border-radius: 20px;
+  margin: 2% auto;
+  width: fit-content;
+  background-color: #1a1a2ecc;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.menu {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  padding: 0 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu li.active a {
+  color: #b37fff;
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: #b37fff;
+  border-radius: 10px;
+  left: 0;
+  width: 0;
+}
