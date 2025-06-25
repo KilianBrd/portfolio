@@ -152,7 +152,7 @@ function CardCapa() {
 
   return (
     <motion.div
-      className="card"
+      className="cardProjet"
       ref={ref}
       variants={containerVariants}
       initial="hidden"

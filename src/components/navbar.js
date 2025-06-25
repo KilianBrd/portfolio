@@ -42,7 +42,7 @@ function Navbar() {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
     >
-      <nav className="navbar">
+      <nav className="navbarMenu">
         <ul className="menu" ref={menuRef}>
           {menuItems.map(({ label, path }, i) => (
             <motion.li

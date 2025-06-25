@@ -18,7 +18,7 @@ const projets = [
 
 function CardProjets({ title }) {
   return (
-    <div className="card">
+    <div className="cardProjet">
       <h3 className="titleProjet">{title}</h3>
       <div className="projetsCards">
         {projets.map((project, i) => (
