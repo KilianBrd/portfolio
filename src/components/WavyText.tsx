@@ -49,6 +49,7 @@ const WavyText = ({
 
   return (
     <motion.h1
+      className="text-2xl"
       style={{ display: "flex", overflow: "hidden" }}
       variants={container}
       initial="hidden"

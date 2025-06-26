@@ -10,13 +10,20 @@ function Home() {
 
   return (
     <div className="all">
-      <div className="content">
-        <div className="textPresentation">
+      <div className="content flex flex-col md:flex-row items-center justify-between gap-8">
+        {/* Texte de présentation */}
+        <div className="textPresentation text-center md:text-left max-w-md">
           <WavyText text="Bonjour, je suis Kilian Beraud !" replay={replay} />
-          <p>Développeur Web & Mobile</p>
+          <p className="text-lg text-gray-600">Développeur Web & Mobile</p>
         </div>
-        <div className="photo">
-          <img src="/images/moi.jpg" alt="photo" className="photoimg" />
+
+        {/* Image */}
+        <div className="md:mr-10 mr-0 flex justify-center">
+          <img
+            src="/images/moi.jpg"
+            alt="photo"
+            className="photoimg w-40 h-40 md:w-60 md:h-60 rounded-full object-cover shadow-lg"
+          />
         </div>
       </div>
       <div className="cardcustom">
