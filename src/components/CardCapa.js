@@ -138,16 +138,20 @@ function CardCapa() {
 
   // Fonction pour splitter le texte en lettres
   const splitIntoLetters = (text) => {
-    return text.split("").map((char, index) => (
+    return text.split(" ").map((word, i) => (
       <motion.span
-        key={index}
-        variants={letterVariants}
-        style={{
-          display: "inline-block",
-          transformOrigin: "bottom",
-        }}
+        key={i}
+        style={{ display: "inline-block", marginRight: "0.25rem" }}
       >
-        {char === " " ? "\u00A0" : char}
+        {word.split("").map((char, j) => (
+          <motion.span
+            key={j}
+            variants={letterVariants}
+            style={{ display: "inline-block" }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </motion.span>
     ));
   };
@@ -166,7 +170,10 @@ function CardCapa() {
         </motion.h2>
 
         <div className="contentCapa">
-          <motion.p className="card-body" variants={textVariants}>
+          <motion.p
+            className="card-body whitespace-pre-wrap break-words"
+            variants={textVariants}
+          >
             {splitIntoLetters(
               "Je suis un développeur passionné notamment par le monde du mobile mais aussi du web."
             )}
