@@ -10,26 +10,28 @@ function Home() {
 
   return (
     <div className="all">
-      <div className="content flex flex-col md:flex-row items-center justify-between gap-8">
-        {/* Texte de présentation */}
-        <div className="textPresentation text-center md:text-left max-w-md">
+      {/* Image et texte, entête */}
+      <div className="content flex flex-col md:flex-row items-center justify-center gap-8 text-center">
+        <div>
           <WavyText text="Bonjour, je suis Kilian Beraud !" replay={replay} />
           <p className="text-lg text-gray-600">Développeur Web & Mobile</p>
         </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
 
-        {/* Image */}
-        <div className="md:mr-10 mr-0 flex justify-center">
-          <img
-            src="/images/moi.jpg"
-            alt="photo"
-            className="photoimg w-40 h-40 md:w-60 md:h-60 rounded-full object-cover shadow-lg"
-          />
-        </div>
+        <img
+          src="/images/moi.jpg"
+          alt="photo"
+          className="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover border-2 border-black -translate-y-4"
+        />
       </div>
+
+      {/* Les projets */}
       <div className="cardcustom">
         <CardProjets title="Projets" content="" />
       </div>
       <div className="spacer"></div>
+      {/* Les skills */}
       <div className="cardCapa">
         <CardCapa />
       </div>

@@ -49,13 +49,13 @@
 }
 
 .photoimg {
-  border: 2px solid black;
-  object-position: top;
-  width: 100%;
-  height: 100%;
+  width: 10rem; /* taille fixe pour le cercle */
+  height: 10rem; /* même taille que width */
+  border-radius: 50%; /* cercle parfait */
   object-fit: cover;
-  border-radius: 5%;
+  object-position: top; /* remonte le visage */
   display: block;
+  border: 2px solid black;
 }
 
 .spacer {

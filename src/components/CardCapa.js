@@ -15,12 +15,14 @@ function CardCapa() {
   const codeString = `const skills = [
   'JavaScript',
   'php',
+  'Symfony'
   'React',
   'dart',
   'flutter',
   'SQL',
   'tailwind',
   'Git'
+  'C#',
 ];`;
 
   // Variants pour le conteneur principal
