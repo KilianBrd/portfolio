@@ -190,6 +190,13 @@ function CardCapa() {
             </SyntaxHighlighter>
           </motion.div>
         </div>
+        <div className="mt-6 flex justify-center">
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-purple-500 hover:scale-105 transition-all duration-300">
+              Voir le CV
+            </button>
+          </a>
+        </div>
       </div>
     </motion.div>
   );
