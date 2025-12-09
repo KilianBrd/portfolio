@@ -17,6 +17,11 @@ const projets = [
     image: "/images/buro1.png",
     link: "https://buro1.fr",
   },
+  {
+    title: "Site météo",
+    image: "/images/meteo.png",
+    link: "https://meteo.kilianberaud.com",
+  } 
 ];
 
 // Fonction pour boucler tous les projects cités au dessus
