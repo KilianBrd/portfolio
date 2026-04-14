@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 
 const projets = [
   {
+    title: "Kapsule",
+    image: "/images/kapsule.png",
+    link: "https://kapsule.kilianberaud.com",
+  },
+  {
     title: "Portfolio",
     image: "/images/portfolio.png",
     link: "http://kilianberaud.com",
@@ -21,7 +26,7 @@ const projets = [
     title: "Site météo",
     image: "/images/meteo.png",
     link: "https://meteo.kilianberaud.com",
-  } 
+  },
 ];
 
 // Fonction pour boucler tous les projects cités au dessus
